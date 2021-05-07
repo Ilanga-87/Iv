@@ -1,0 +1,9 @@
+<?php
+error_reporting(-1);
+
+$deposit = 10000;
+
+for ($i=1; $deposit <= 1000000; $i++ && $deposit = $deposit+($deposit*(10 / 100))) {
+ echo "Через {$i}г. сумма будет {$deposit}р.\n";
+}
+?>
